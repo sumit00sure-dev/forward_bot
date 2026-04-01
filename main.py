@@ -5,6 +5,10 @@ from database import *
 from processor import process_caption
 from queue_manager import QUEUE, worker
 
+print("BOT TOKEN:", BOT_TOKEN)
+print("API ID:", API_ID)
+print("API HASH:", API_HASH)
+
 client = TelegramClient("bot", API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
 # ✅ Admin Check
