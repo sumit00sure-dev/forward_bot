@@ -85,4 +85,5 @@ async def main():
     print("🚀 Ultra Bot Running...")
     await client.run_until_disconnected()
 
-asyncio.run(main())
+print("🚀 Bot Running...")
+client.run_until_disconnected()
