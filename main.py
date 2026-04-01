@@ -79,11 +79,11 @@ async def handler(event):
 
 # 🚀 START
 async def main():
-    for _ in range(5):  # 5 workers = high speed
+    for _ in range(5):
         asyncio.create_task(worker())
 
     print("🚀 Ultra Bot Running...")
     await client.run_until_disconnected()
 
-print("🚀 Bot Running...")
+client.loop.create_task(main())
 client.run_until_disconnected()
