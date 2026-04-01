@@ -1,10 +1,8 @@
-BOT_TOKEN = "8653195660:AAH4Rgem-WyziKArpP7ZP8mNNALEuOOcz_A"
-API_ID = 36014101
-API_HASH = "d4b9c4246a4a0d16e960677725e8ed8e"
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
 
 ADMIN_ID = 1308571847
-
 BACKUP_CHANNEL = "https://t.me/upscse26"
-
-DEFAULT_CAPTION = "📚 Powered by Professor"
-MAX_RETRY = 3
